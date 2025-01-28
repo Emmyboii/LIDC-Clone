@@ -5,13 +5,24 @@ import LASUarial from '../LIDC Images/LASUarial.jpg'
 const Navbar = () => {
 
     const [menu, setMenu] = useState(false)
+    const [nav, setNav] = useState(false)
     const handleMenu = () => {
         setMenu(!menu)
     }
 
+    const fixed = () => {
+        if (window.scrollY > 20) {
+            setNav(true)
+        } else {
+            setNav(false)
+        }
+    }
+
+    window.addEventListener('scroll', fixed)
+
     return (
         <>
-            <div className='bg-orange-600 max-w-[1640px]  py-1 fixed z-10 w-full'>
+            <div className='bg-orange-600 max-w-[1640px] py-1 fixed z-50 w-full'>
                 <div className='flex justify-between mr-0 ml-5 relative'>
                     <h1 className='text-white text-[25px] font-serif hidden sm:flex'>Lagos State University Integrated Data Center</h1>
                     <h1 className='text-white text-[20px] font-serif sm:hidden whitespace-nowrap'>LASU IDC</h1>
@@ -46,7 +57,7 @@ const Navbar = () => {
             </div>
             <div>
                 <img className='w-screen relative sm:top-[75px] object-cover h-screen lg:top-0' src={LASUarial} alt="/" />
-                <ul className='hidden lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-white'>
+                <ul className={nav ? 'hidden lg:flex lg:whitespace-nowrap text-center z-50 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-black bg-white' : 'hidden lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-white'}>
                     <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
                         <a href="/">Admission Screening</a>
                     </li>
