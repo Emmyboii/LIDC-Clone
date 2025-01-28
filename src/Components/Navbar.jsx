@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
             <div>
                 <img className='w-screen relative sm:top-[75px] object-cover h-screen lg:top-0' src={LASUarial} alt="/" />
-                <ul className={nav ? 'hidden lg:flex lg:whitespace-nowrap text-center z-50 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-black bg-white' : 'hidden lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-white'}>
+                <ul className={nav ? 'hidden lg:flex lg:whitespace-nowrap text-center z-50 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto w-full text-black bg-white' : 'hidden w-full lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-white'}>
                     <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
                         <a href="/">Admission Screening</a>
                     </li>
