@@ -57,29 +57,30 @@ const Navbar = () => {
             </div>
             <div>
                 <img className='w-screen relative sm:top-[75px] object-cover h-screen lg:top-0' src={LASUarial} alt="/" />
-                <ul className={nav ? 'hidden lg:flex lg:whitespace-nowrap text-center z-50 text-2xl fixed top-13 p-3 xl:left-40 mx-auto w-full text-black bg-white' : 'hidden w-full p-3 lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-14 left-[18px] xl:left-40 mx-auto text-white'}>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                <ul className={nav ? 'lg:flex lg:whitespace-nowrap text-center z-50 text-2xl fixed top-[60px] p-3 xl:left-40 w-full text-black bg-white' : 'lg:flex lg:whitespace-nowrap text-center z-10 text-2xl fixed top-[60px] p-3 xl:left-40 w-full text-white'}>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">Admission Screening</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">IIVC-Revalidation</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">Fulltime</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">SandWich</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">LASUES</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">News</a>
                     </li>
-                    <li className='px-4 hover:border-b-white hover:border-b-4 py-1 hover:duration-300'>
+                    <li className='px-4 hover:border-b-4 hover:border-orange-600 py-1 transition duration-300'>
                         <a href="/">About</a>
                     </li>
                 </ul>
+
                 <div className='absolute top-[220px] sm:top-[250px] lg:top-[220px] mr-[50px] ml-[30px] md:mx-[100px] lg:mx-[180px] sm:mx-[70px] text-center flex justify-center'>
                     <h1 className='text-white text-[49px] font-bold sm:text-[75px] md:text-[80px] lg:text-[80px] text-center'>Lagos State University Integrated Data Center</h1>
                 </div>
